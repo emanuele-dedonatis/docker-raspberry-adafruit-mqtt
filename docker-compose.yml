@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  dht22:
+    container_name: dht22
+    build:
+      context: .
+      dockerfile: Dockerfile
+    privileged: true
+    network_mode: host
+    restart: always
